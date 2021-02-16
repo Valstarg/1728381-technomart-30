@@ -1,0 +1,471 @@
+/*Variables*/
+:root {
+  --basic-bacground: #ffffff;
+  --special-background: #f1f5f7;
+  --background-dark: #f7f3ec;
+  --background-grey: #f9f5f0;
+  --background-greylight: #f4f4f4;
+  --basic-grey: #293449;
+  --basic-dark: #32425c;
+  --bacground-dark-white: #f1f1f1;
+  --basic-red: #ee3643;
+  --succes: #63a63e;
+  --succes2: #5fbb2d;
+  --special-yellow: #ffbf47;
+  --special-blue: #3bbce3;
+  --special-lilac: #dc91d8;
+  --special-greenlight: #8ed78f;
+  --special-yellowlight: #ffd180;
+  --basic-darkgrey: #212a3a;
+  --error: #ba2732;
+  --styleguid-words: #61d322;
+  --styleguid-icon: #161d29;
+  --styleguid-icon2: #1d2739;
+  --styleguid-icon3: #a9a9a9;
+  --styleguid-login: #c5c5c5;
+  --styleguid-login2: #3d546f;
+  --styleguid-catalog: #ca2c37;
+  --styleguid-catalog2: #ba2732;
+  --styleguid-catalog3: #518534;
+  --stroke: #eaeaea;
+  --services-button: #cfc970;
+}
+
+
+
+ /*   Подскажите как правильно подключить шрифты из локальной папки через директивы. Каждый шрифт и его стиль нужно прописывать отдельно?
+ @font-face {
+    font-weight: normal;
+    font-family: "PT sans";
+    src: url("../fons/ptsans.woff2),
+         url("../fonts/ptsans.woff");
+} */
+
+
+
+
+.page {
+  width: 1200px;
+  height: 320px;
+  background-color: var(--basic-bacground);
+}
+
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "PT Sans","Cuprum" sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+  background-color: var(--special-background);
+}
+
+.main-header-top {
+  background-color: var(--basic-grey);
+}
+
+.search {
+  color: var(--basic-bacground);
+}
+
+.top-navigation-bookmarks,
+.top-navigation-cart {
+  color: var(--basic-bacground);
+  text-decoration: none;
+}
+
+.top-navigation-bookmarks:focus,
+.top-navigation-cart:focus,
+.top-navigation-button:focus,
+.main-navigation-link:focus {
+  opacity: 0.5;
+}
+
+.top-navigation-button {
+  width: 150px;
+  height: 42px;
+  background-color: var(--succes);
+  color: var(--basic-bacground);
+  border: none;
+}
+
+.title-text {
+  color: var(--basic-red);
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.main-contacts {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.main-contacts-phone {
+  color: var(--basic-red);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+  border: 4px solid var(--basic-bacground);
+}
+.authorization-button-login,
+.authorization-button-registration {
+  width: 121px;
+  height: 45px;
+  background-color: var(--basic-bacground);
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  border: none;
+}
+
+.authorization-button-login:hover,
+.authorization-button-registration:hover {
+  color: var(--basic-red);
+}
+
+.authorization-button-login:focus,
+.authorization-button-registration:focus {
+  color: var(--styleguid-login);
+}
+
+.main-navigation {
+  height: 60px;
+  background-color: var(--basic-dark);
+}
+
+.main-navigation-list li {
+  display: inline;
+}
+
+.main-navigation-link {
+  color: var(--basic-bacground);
+  text-decoration: none;
+}
+
+.hammers {
+  width: 620px;
+  height: 266px;
+  background-image: url(../img/slider.jpg);
+  color: var(--basic-bacground);
+}
+
+.hammers h2 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.catalog-button:hover {
+  background-color: var(--styleguid-catalog);
+}
+
+.catalog-button:focus {
+  background-color: var(--error);
+}
+
+.offers-list li {
+  width: 300px;
+  height: 123px;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.offers li:nth-child(1),
+.offers li:nth-child(5) {
+  background-color: var(--special-yellow);
+}
+
+.offers li:nth-child(2) {
+  background-color: var(--special-blue);
+}
+
+.offers li:nth-child(3) {
+  background-color: var(--special-lilac);
+}
+
+.offers li:nth-child(4) {
+  background-color: var(--special-greenlight);
+}
+
+.offers-list-item {
+  color: var(--basic-bacground);
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.offers-list-item a {
+  color: var(--basic-bacground);
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.offers-list-item h3 {
+  font-weight: 700;
+}
+
+.materials-button,
+.tools-button,
+.equipment-button,
+.sale-button,
+.delivery-button {
+  width: 135px;
+  height: 38px;
+  background-color: var(--basic-bacground);
+  opacity: 0.5;
+  border: none;
+}
+
+.materials-button:hover,
+.tools-button:hover,
+.equipment-button:hover,
+.sale-button:hover,
+.delivery-button:hover {
+  background-color: var(--styleguid-login);
+}
+
+.materials-button:focus,
+.tools-button:focus,
+.equipment-button:focus,
+.sale-button:focus,
+.delivery-button:focus {
+  background-color: var(--styleguid-icon3);
+}
+
+.popular-products-list-item {
+  width: 220px;
+  height: 318px;
+  border: 1px solid var(--stroke);
+  display: inline-block;
+}
+
+.popular-products-list-item a {
+  color: var(--basic-bacground);
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: var(--basic-red);
+}
+
+.price-delete {
+  color: var(--styleguid-icon3);
+}
+
+.model-new {
+  color: var(--basic-bacground);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.manufacturers,
+.popular-products {
+  background-color: var(--background-grey);
+  width: 940px;
+  height: 89px;
+}
+
+.popular-manufacturers-list-item {
+  width: 220px;
+  height: 145px;
+  border: 1px solid var(--stroke);
+  display: inline-block;
+}
+
+.popular-manufacturers-list,
+.popular-products-list {
+  text-align: center;
+}
+
+.services {
+  background-color: var(--special-background);
+}
+
+.services-description,
+.delivery-description,
+.about-company-description,
+.delivery-description,
+.contacts-description {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services-table {
+  border-collapse: collapse;
+  width: 237px;
+  height: 185px;
+}
+
+.services-table-item {
+  background-color: var(--basic-dark);
+  color: var(--basic-bacground);
+  font-size: 21px;
+  line-height: 30px;
+  padding: 20px;
+  padding-right: 152px;
+}
+
+.services-table-item:hover {
+  background-color: var(--basic-grey);
+}
+
+
+.main-navigation-list,
+.services-list,
+.popular-products-list,
+.popular-manufacturers-list,
+.footer-navigation ul,
+.footer-social ul,
+.footer-feedback-list,
+.offers-list {
+  list-style: none;
+}
+
+.services-list h3,
+.manufacturers h2,
+.products h2 {
+  color: var(--basic-dark);
+}
+
+.about-company h2,
+.contacts h2,
+.services h2,
+.services h3 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.delivery-list {
+  list-style-image: url(../img/line.svg);
+}
+
+.aboutcompany-button {
+  width: 220px;
+  height: 38px;
+}
+
+.button {
+  width: 192px;
+  height: 38px;
+  border: none;
+  background-color: var(--basic-red);
+  color: var(--basic-bacground);
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.map-button {
+  width: 300px;
+  height: 38px;
+}
+
+.bottom-footer {
+  background-color: var(--basic-grey);
+}
+
+.main-footer {
+  background-color: var(--basic-dark);
+}
+
+.footer-navigation a,
+.footer-contacts,
+.footer-contacts a {
+  color: var(--basic-bacground);
+  text-decoration: none;
+}
+
+.footer-navigation-list li,
+.footer-social li {
+  display: inline;
+}
+
+.footer-navigation-list-item2 a {
+  color: var(--special-yellowlight);
+}
+
+.footer-navigation-list-item a:hover,
+.footer-navigation-list-item2 a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation-list-item a:focus {
+  color: var(--special-background);
+  opacity: 0.5;
+}
+
+.footer-navigation-list-item2 a:focus {
+  color: var(--special-yellowlight);
+  opacity: 0.5;
+}
+
+.footer-feedback,
+.footer-copyright,
+.technomart {
+  color: var(--basic-bacground);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-feedback a,
+.footer-copyright a {
+  color: var(--special-yellowlight);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-feedback a:hover,
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+.footer-feedback a:focus,
+.footer-copyright a:focus {
+  color: var(--basic-red);
+}
+
+.modal {
+  width: 620px;
+  height: 430px;
+  background-image: url(../img/modal-line.svg);
+  background-repeat: no-repeat;
+  background-color: var(--basic-bacground);
+  text-align: center;
+}
+
+.modal-map {
+  width: 943px;
+  height: 449px;
+  background-image: url(../img/map2.png);
+}
+
+.feedback-form p {
+  font: inherit
+}
+
+.fullname-icon,
+.email-icon,
+.comment-icon {
+  font-size: 13px;
+  line-height: 24px;
+  border: 2px solid var(--styleguid-login);
+}
+
+.modal-button-send {
+  height: 112px;
+  background-color: var(--background-greylight);
+}
+
+.send-button {
+  width: 460px;
+}
