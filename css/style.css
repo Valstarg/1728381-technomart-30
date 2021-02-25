@@ -1,4 +1,3 @@
-/*Variables*/
 :root {
   --basic-bacground: #ffffff;
   --special-background: #f1f5f7;
@@ -29,6 +28,8 @@
   --styleguid-catalog3: #518534;
   --stroke: #eaeaea;
   --services-button: #cfc970;
+  --basic-black: #000000;
+  --special-border: #e5e5e5;
 }
 
 
@@ -138,6 +139,192 @@ img {
   color: var(--styleguid-login);
 }
 
+/*Страница каталога. Хедер*/
+
+.authorization-button-logon {
+  width: 299px;
+  height: 45px
+}
+
+.authorization-button-logon:hover {
+  color: var(--basic-black);
+}
+
+.authorization-button-logon:focus {
+  color: var(--styleguid-login);
+}
+
+.personal-list li {
+  display: inline;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.personal-list-item a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.personal-list-item a:hover {
+  color: var(--basic-red);
+}
+
+.personal-list-item a:focus {
+  color: var(--styleguid-login);
+}
+
+/*Breadcrumps*/
+
+.breadcrumps li {
+  display: inline;
+}
+
+.breadcrumps a,
+.filter h2 {
+  color: var(--basic-black);
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/*Страница каталога. Основное*/
+
+.catalog-hammers {
+  width: 940px;
+  height: 89px;
+  background-color: var(--special-background);
+  margin-left: 130px;
+}
+
+.catalog-hammers h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-dark);
+}
+
+.filter {
+  width: 220px;
+  height: 38px;
+  background-color: var(--background-dark);
+}
+
+.filter-select {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.filter-manufacturers-list li,
+.filter-power-list li {
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.filter-button {
+  width: 220px;
+  height: 38px;
+  background-color: var(--basic-bacground);
+  border: 1px solid var(--special-border);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sorting {
+  width: 700px;
+  height: 38px;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: var(--background-dark);
+}
+
+.sorting h2 {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sorting-link {
+  color: var(--basic-black);
+  opacity: 0.3;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.sorting-link:hover {
+  color: var(--basic-black);
+  opacity: 1;
+  border-bottom: 1px solid var(--basic-red);
+}
+
+.sorting-link-slide path:hover {
+  fill: var(--basic-black)
+}
+
+.button-page-select {
+  font-size: 13px;
+  line-height: 18px;
+  width: 38px;
+  height: 38px;
+  background-color: var(--basic-bacground);
+  border: 1px solid var(--special-border);
+}
+
+.button-page-next {
+  font-size: 13px;
+  line-height: 18px;
+  width: 140px;
+  height: 38px;
+  background-color: var(--basic-bacground);
+  border: 1px solid var(--special-border);
+}
+
+.basic-products-pages-list li {
+  display: inline;
+}
+
+.button-page-select:hover,
+.button-page-next:hover {
+  border: 1px solid var(--styleguid-login);
+}
+
+.button-page-select:focus,
+.button-page-next:focus {
+  border: 1px solid var(--basic-red);
+}
+
+.about-hammers h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.about-hammers {
+  background-color: var(--special-background);
+  width: 1200px;
+  height: 261px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.modal-purchase {
+  width: 620px;
+  height: 282px;
+}
+
+.modal-bottom {
+  width: 620px;
+  height: 112px;
+  background-color: var(--bacground-dark-white);
+}
+
+.button-resume {
+  background-color: var(--basic-bacground);
+  color: var(--basic-black);
+  width: 192px;
+  height: 38px;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .main-navigation {
   height: 60px;
   background-color: var(--basic-dark);
@@ -220,6 +407,8 @@ img {
 .equipment-button,
 .sale-button,
 .delivery-button {
+  font-size: 14px;
+  line-height: 18px;
   width: 135px;
   height: 38px;
   background-color: var(--basic-bacground);
@@ -243,14 +432,16 @@ img {
   background-color: var(--styleguid-icon3);
 }
 
-.popular-products-list-item {
+.popular-products-list-item,
+.basic-products-list-item {
   width: 220px;
   height: 318px;
   border: 1px solid var(--stroke);
   display: inline-block;
 }
 
-.popular-products-list-item a {
+.popular-products-list-item a,
+.basic-products-list-item a {
   color: var(--basic-bacground);
   font-size: 17px;
   line-height: 18px;
@@ -268,11 +459,18 @@ img {
   line-height: 18px;
 }
 
+.popular-manufacturers-list li:hover,
+.popular-products-list li:hover,
+.basic-products-list li:hover {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
 .manufacturers,
 .popular-products {
   background-color: var(--background-grey);
   width: 940px;
   height: 89px;
+  margin-left: 130px;
 }
 
 .popular-manufacturers-list-item {
@@ -283,7 +481,8 @@ img {
 }
 
 .popular-manufacturers-list,
-.popular-products-list {
+.popular-products-list,
+.basic-products-list {
   text-align: center;
 }
 
@@ -319,7 +518,12 @@ img {
   background-color: var(--basic-grey);
 }
 
-
+.personal-list,
+.breadcrumps,
+.filter-manufacturers-list,
+.filter-power-list,
+.basic-products-list,
+.basic-products-pages-list,
 .main-navigation-list,
 .services-list,
 .popular-products-list,
@@ -434,6 +638,15 @@ img {
 .footer-feedback a:focus,
 .footer-copyright a:focus {
   color: var(--basic-red);
+}
+
+.vkontakte:hover,
+.vkontakte:focus,
+.facebook:hover,
+.facebook:focus,
+.instagram:hover,
+.instagram:focus {
+  fill: var(--basic-red)
 }
 
 .modal {
