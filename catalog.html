@@ -2,70 +2,70 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт-Каталог</title>
+    <title>HTML Academy: Техномарт</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/icon180.png">
     <link rel="manifest" href="favicons.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i&amp;subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="body-page">
-    <header>
-      <section>
-        <a class="logo">
-          <img src="img/logo.svg" width="106.83" height="16.9" alt="Логотип ТЕХНОМАРТ">
+  <body class="page-body">
+    <header class="main-header">
+      <section class="main-header-top">
+        <h2>Покупки</h2>
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="220" height="47" alt="Логотип ТЕХНОМАРТ">
         </a>
-        <form action="search.html" method="get">
+        <form class="search" action="https://echo.htmlacademy.ru" method="get">
           <label
             >Поиск:
             <input type="text" name="search">
           </label>
         </form>
-        <div>
-          <a href="blank.html">Закладки</a>
-          <a href="blank.html">Корзина</a>
-          <a href="blank.html">Оформить заказ</a>
+        <div class="top-navigation">
+          <a class="top-navigation-bookmarks" href="blank.html">Закладки</a>
+          <a class="top-navigation-cart" href="blank.html">Корзина</a>
+            <button class="top-navigation-button" type="button">Оформить заказ</button>
         </div>
       </section>
       <section>
         <p>О нас</p>
-        <h1>
+        <h1 class="title-text">
             Интернет-магазин<br>
             строительных материалов<br>
             и инструментов для ремонта
         </h1>
-        <p>
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <p class="main-contacts">
+          <a class="main-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <br>
           г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8
         </p>
-        <div>
-          <a href="blank.html">Неопознанный Енот</a>
-          <a href="blank.html">Мои заказы</a>
-          <a href="blank.html">Личный кабинет</a>
-        </div>
       </section>
-      <nav>
-        <ul>
+      <nav class="main-navigation">
+        <ul class="main-navigation-list">
           <li>
-            <a href="index.html">Главная</a>
+            <a class="main-navigation-link" href="index.html">Главная</a>
           </li>
           <li>
-            <a href="index.html">Компания</a>
+            <a class="main-navigation-link" href="index.html">Компания</a>
           </li>
           <li>
-            <a href="catalog.html">Каталог</a>
+            <a class="main-navigation-link" href="catalog.html">Каталог</a>
           </li>
           <li>
-            <a href="blank.html">Новости</a>
+            <a class="main-navigation-link" href="blank.html">Новости</a>
           </li>
           <li>
-            <a href="blank.html">Спецпредложения</a>
+            <a class="main-navigation-link" href="blank.html">Спецпредложения</a>
           </li>
           <li>
-            <a href="blank.html">Доставка</a>
+            <a class="main-navigation-link" href="blank.html">Доставка</a>
           </li>
           <li>
-            <a href="blank.html">Контакты</a>
+            <a class="main-navigation-link" href="blank.html">Контакты</a>
           </li>
         </ul>
       </nav>
