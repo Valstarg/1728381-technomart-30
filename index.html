@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html class="page" lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
@@ -12,16 +14,18 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body class="page-body">
+
     <header class="main-header">
+
       <section class="main-header-top">
         <h2>Покупки</h2>
         <a class="main-header-logo">
           <img src="img/logo.svg" width="220" height="47" alt="Логотип ТЕХНОМАРТ">
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <label
-            >Поиск:
+          <label>Поиск:
             <input type="text" name="search">
           </label>
         </form>
@@ -31,6 +35,7 @@
             <button class="top-navigation-button" type="button">Оформить заказ</button>
         </div>
       </section>
+
       <section>
         <p>О нас</p>
         <h1 class="title-text">
@@ -48,61 +53,66 @@
           <button class="authorization-button-registration" type="submit">Регистрация</button>
         </div>
       </section>
+
       <nav class="main-navigation">
         <ul class="main-navigation-list">
-          <li>
+          <li class="main-navigation-list-item">
             <a class="main-navigation-link" href="index.html">Главная</a>
           </li>
-          <li>
+          <li class="main-navigation-list-item">
             <a class="main-navigation-link" href="index.html">Компания</a>
           </li>
-          <li>
+          <li class="main-navigation-list-item">
             <a class="main-navigation-link" href="catalog.html">Каталог</a>
           </li>
-          <li>
+          <li class="main-navigation-list-item">
             <a class="main-navigation-link" href="blank.html">Новости</a>
           </li>
-          <li>
+          <li class="main-navigation-list-item">
             <a class="main-navigation-link" href="blank.html">Спецпредложения</a>
           </li>
-          <li>
+          <li class="main-navigation-list-item">
             <a class="main-navigation-link" href="blank.html">Доставка</a>
           </li>
-          <li>
+          <li class="main-navigation-list-item">
             <a class="main-navigation-link" href="blank.html">Контакты</a>
           </li>
         </ul>
       </nav>
+
     </header>
+
     <main>
+
       <section class="offers">
         <h2>У нас есть</h2>
  <!--Фон кнопки белый с прозрачностью 0.5 и цвет текста тоже белый,и они сливаются,прозрачность действует и на текст. Как поправить?-->
         <ul class="offers-list">
           <li class="offers-list-item">
-            <h3>Материалы</h3>
+            <h3 class="offers-title">Материалы</h3>
               <button class="materials-button" type="button">НА ЛЮБОЙ ВКУС</button>
           </li>
           <li class="offers-list-item">
-            <h3>Инструмент</h3>
+            <h3 class="offers-title">Инструмент</h3>
               <button class="tools-button" type="button">НА ВСЕ СЛУЧАИ</button>
           </li>
           <li class="offers-list-item">
-            <h3>Техника</h3>
+            <h3 class="offers-title">Техника</h3>
               <button class="equipment-button" type="button">ДЛЯ СТРОЙКИ</button>
           </li>
           <li class="offers-list-item">
-            <h3>Скидки 50%</h3>
+            <h3 class="offers-title">Скидки 50%</h3>
               <button class="sale-button" type="button">НА 350 ТОВАРОВ</button>
           </li>
           <li class="offers-list-item">
-            <h3>Доставка</h3>
+            <h3 class="offers-title">Доставка</h3>
               <button class="delivery-button" type="button">БЕСПЛАТНО</button>
           </li>
         </ul>
       </section>
+
       <section class="hammers">
-        <h2>ПЕРФОРАТОРЫ</h2>
+        <h2 class="hammers-title">ПЕРФОРАТОРЫ</h2>
         <p>Настоящие мужские игрушки</p>
           <div>
             <button class="button hammers-button-back" type="button">Назад</button>
@@ -111,9 +121,10 @@
         <br>
           <button class="button catalog-button" type="button">ОТКРЫТЬ КАТАЛОГ</button>
       </section>
+
       <section>
         <div class="popular-products">
-          <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+          <h2 class="popular-products-title">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
             <button class="button" type="button">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</button>
         </div>
         <ul class="popular-products-list">
@@ -171,12 +182,12 @@
           </li>
         </ul>
       </section>
+
       <section>
         <div class="manufacturers">
-          <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+          <h2 class="manufacturers-title">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
             <button class="button" type="button">ВСЕ ПРОИЗВОДИТЕЛИ</button>
         </div>
-<!--Не совсем разобрался как выровнить картинки по вертикали -->
         <ul class="popular-manufacturers-list">
           <li class="popular-manufacturers-list-item">
             <a href="#">
@@ -220,8 +231,9 @@
           </li>
         </ul>
       </section>
+
       <section class="services">
-        <h2>СЕРВИСЫ</h2>
+        <h2 class="services-title">СЕРВИСЫ</h2>
         <p class="services-description">
           Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
@@ -238,7 +250,7 @@
               <td class="services-table-item">Кредит</td>
             </tr>
           </table>
-          <h3>ДОСТАВКА</h3>
+          <h3 class="services-title">ДОСТАВКА</h3>
           <p class="delivery-description">
             Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно!<br>
@@ -250,8 +262,9 @@
           </figure>
         </div>
       </section>
+
       <section class="about-company">
-        <h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
+        <h2 class="company-title">КОМПАНИЯ "ТЕХНОМАРТ"</h2>
         <p class="about-company-description">
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
           для<br>
@@ -270,8 +283,9 @@
         </ul>
           <button class="button aboutcompany-button" type="button">ПОДРОБНЕЕ О КОМПАНИИ</button>
       </section>
+
       <section class="contacts">
-        <h2>КОНТАКТЫ</h2>
+        <h2 class="contacts-title">КОНТАКТЫ</h2>
         <p class="contacts-description">
           Вы можете забрать товары сами,<br>
           заехав в наш офис:
@@ -282,7 +296,9 @@
         <br>
           <button class="button map-button" type="button">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button>
       </section>
+
     </main>
+
     <footer class="main-footer">
       <a class="main-footer-logo">
         <img src="img/logo.svg" width="220" height="68" alt="Логотип ТЕХНОМАРТ">
@@ -291,43 +307,49 @@
         г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br>
         <a class="footer-contacts-phone" href="tel:+78125550555">+7(812)555-05-55</a>
       </p>
+
       <nav class="footer-navigation">
         <ul class="footer-navigation-list">
           <li class="footer-navigation-list-item">
-            <a href="index.html">Компания</a>
+            <a class="footer-navigation-link" href="index.html">Компания</a>
           </li>
           <li class="footer-navigation-list-item">
-            <a href="blank.html">Новости</a>
+            <a class="footer-navigation-link" href="blank.html">Новости</a>
           </li>
           <li class="footer-navigation-list-item">
-            <a href="catalog.html">Каталог</a>
+            <a class="footer-navigation-link" href="catalog.html">Каталог</a>
           </li>
           <li class="footer-navigation-list-item">
-            <a href="blank.html">Доставка</a>
+            <a class="footer-navigation-link" href="blank.html">Доставка</a>
           </li>
           <li class="footer-navigation-list-item">
-            <a href="blank.html">Контакты</a>
+            <a class="footer-navigation-link" href="blank.html">Контакты</a>
           </li>
           <li class="footer-navigation-list-item2">
-            <a href="catalog.html">Материалы</a>
+            <a class="footer-navigation-link" href="catalog.html">Материалы</a>
           </li>
           <li class="footer-navigation-list-item2">
-            <a href="catalog.html">Техника</a>
+            <a class="footer-navigation-link" href="catalog.html">Техника</a>
           </li>
           <li class="footer-navigation-list-item2">
-            <a href="catalog.html">Инструмент</a>
+            <a class="footer-navigation-link" href="catalog.html">Инструмент</a>
           </li>
           <li class="footer-navigation-list-item2">
-            <a href="blank.html">Спецпредложения</a>
+            <a class="footer-navigation-link" href="blank.html">Спецпредложения</a>
           </li>
         </ul>
       </nav>
+
       <section class="bottom-footer">
         <h2 class="technomart">
           © 2010-2019 Компания "Техномарт"<br>
           Все права защищены
 <<<<<<< HEAD
         </h2>
+
+=======
+<<<<<<< HEAD
+        </h2>
 =======
 <<<<<<< HEAD
         </h2>
@@ -335,44 +357,79 @@
         </p>
 >>>>>>> master
 >>>>>>> master
+>>>>>>> master
         <section class="footer-social">
           <h2>Мы в соцсетях</h2>
-          <ul>
-            <li>
+          <ul class="footer-social-list">
+            <li class="footer-social-list-item">
               <a class="social-button" href="https://vk.com">
-                <img src="img/vk-rest.svg" width="44" height="44" alt="Мы в ВКонтакте">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="vkontakte" fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683
+                    33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873
+                    10.6721 1.4839 22.1627 1.4839Z" fill="#212A3A"/>
+                  <path d="M24.5403 25.7281C25.4609 25.4384 26.6395 27.6406 27.8943 28.4834C28.836 29.1219 29.5573 28.9841 29.5573
+                    28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8232 27.4803C33.7549 27.3678 33.3389 26.4781 31.334
+                    24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213
+                    15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013
+                    16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.3669 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139
+                    20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7992 15.1128C22.388 15.0153 22.0876 14.9516 21.0389
+                    14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3575 15.9444C17.6079
+                    15.9772 18.1693 16.0944 18.4697 16.4937C18.8559 17.0112 18.8443 18.1709 18.8443 18.1709C18.8443 18.1709 19.0649
+                    21.3687 18.3243 21.7653C17.8159 22.0372 17.1206 21.4822 15.6252 18.9378C14.8615 17.6366 14.2847 16.1984 14.2847
+                    16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.73 15.6116 13.393 15.5562 13.393 15.5562L9.81656 15.5787C9.81656
+                    15.5787 9.27923 15.5937 9.08182 15.8244C8.90656 16.0287 9.06738 16.4506 9.06738 16.4506C9.06738 16.4506 11.8686 22.9016 15.0406
+                    26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4338 28.6437C23.6495 28.4187
+                    23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.61 26.0187 24.5403 25.7281Z" fill="white"/>
+                  </svg>
               </a>
             </li>
             <li>
               <a class="social-button" href="https://ru-ru.facebook.com">
-                <img src="img/facebook-rest.svg" width="44" height="44" alt="Мы в Facebook">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="facebook" fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1232 1.4839 42.2265 10.5873
+                    42.2265 21.8169C42.2265 33.0461 33.1232 42.1494 21.8938 42.1494C10.6643 42.1494 1.56108 33.0461 1.56108
+                    21.8169C1.56108 10.5873 10.6643 1.4839 21.8938 1.4839Z" fill="#212A3A"/>
+                  <path d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z" fill="white"/>
+                </svg>
               </a>
             </li>
             <li>
               <a class="social-button" href="https://www.instagram.com">
-                <img src="img/instagram-rest.svg" width="44" height="44" alt="Мы в Instagram">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="instagram" fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873
+                    42.2265 21.8169C42.2265 33.0461 33.1233 42.1494 21.8938 42.1494C10.6643 42.1494 1.56112 33.0461
+                    1.56112 21.8169C1.56112 10.5873 10.6643 1.4839 21.8938 1.4839Z" fill="#212A3A"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65
+                    32 29 32H14C12.35 32 11 30.65 11 29V14C11 12.35 12.35 11 14 11ZM25 21.5C25 19.57 23.43 18 21.5 18C19.57
+                    18 18 19.57 18 21.5C18 23.43 19.57 25 21.5 25C23.43 25 25 23.43 25 21.5ZM14 29V20H15.181C15.0626 20.4913
+                    15.0019 20.9947 15 21.5C15 25.0899 17.9101 28 21.5 28C25.0899 28 28 25.0899 28 21.5C27.9986 20.9946 27.9379
+                    20.4912 27.819 20H29V29H14ZM25 18H29V14H25V18Z" fill="white"/>
+                </svg>
               </a>
             </li>
           </ul>
         </section>
+
         <ul class="footer-feedback-list">
           <li class="footer-feedback">Обратная связь:<br>
-            <a href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="footer-feedback-link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="footer-copyright">Разработано-<br>
-            <a href="https://htmlacademy.ru/intencive/htmlcss">htmlacademy.ru</a>
+            <a class="footer-copyright-link" href="https://htmlacademy.ru/intencive/htmlcss">htmlacademy.ru</a>
           </li>
         </ul>
       </section>
+
     </footer>
+
     <section class="modal modal-feedback">
       <h2>Обратная связь</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
+        <p class="feedback-form-p">
           <label for="fullname-field">Ваше имя:</label>
           <input class="fullname-icon" id="fullname-field" type="text" name="fullname" placeholder="Имя Фамилия">
         </p>
-        <p>
+        <p class="feedback-form-p">
           <label for="email-field">Ваш E-mail:</label>
           <input class="email-icon" id="email-field" type="email" name="email" placeholder="email@examle.com">
         </p>
@@ -386,11 +443,14 @@
         </div>
       </form>
     </section>
+
     <section class="modal modal-map">
       <h2>Мы на карте</h2>
       <a href="https://yandex.ru/maps/">
       </a>
       <button class="close-button" type="button">Закрыть</button>
     </section>
+
   </body>
+
 </html>
