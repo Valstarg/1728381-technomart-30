@@ -353,6 +353,103 @@ img {
   margin: 10px;
 }
 
+/* Grid. Catalog */
+
+.breadcrumps-block {
+  display: grid;
+}
+
+.catalog-hammers-title {
+  margin-left: 29px;
+  margin-top: 29px;
+}
+
+.filter-title {
+  margin-left: 18px;
+  margin-top: 10px;
+}
+
+.sorting-title {
+  margin-top: 10px;
+  margin-left: 19px;
+}
+
+.about-hammers-title {
+  margin-top: 64px;
+}
+
+.main-catalog {
+  display: grid;
+  grid-template-columns: 220px 700px;
+  grid-template-rows: 40px 89px 38px 1fr 140px;
+  gap: 20px;
+}
+
+.breadcrumps-block {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.catalog-hammers {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.filter {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.sorting {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.price-range {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.basic-products {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.basic-products-pages-list {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+.basic-products-list {
+  display: grid;
+  grid-template-columns: repeat(3,220px);
+  grid-template-rows: repeat(3,318px);
+  gap: 20px;
+}
+
+.filter-price {
+  height: 150px;
+}
+
+.filter-manufacturers {
+  height: 260px;
+}
+
+.filter-power {
+  height: 160px;
+}
+
+.filter-price,
+.filter-manufacturers,
+.filter-power {
+  border: none;
+}
+
+.about-hammers-wrapper {
+  display: grid;
+  background-color: var(--special-background);
+}
+
 /* Navigation */
 
 .top-navigation-bookmarks,
@@ -480,8 +577,6 @@ img {
 }
 
 .filter {
-  width: 220px;
-  height: 38px;
   background-color: var(--background-dark);
 }
 
@@ -507,14 +602,12 @@ img {
 }
 
 .sorting {
-  width: 700px;
-  height: 38px;
   font-size: 13px;
   line-height: 18px;
   background-color: var(--background-dark);
 }
 
-.sorting .sorting-title {
+.sorting-title {
   font-size: 13px;
   line-height: 18px;
 }
@@ -575,7 +668,6 @@ img {
 }
 
 .about-hammers {
-  background-color: var(--special-background);
   height: 261px;
   font-size: 13px;
   line-height: 24px;
@@ -671,7 +763,8 @@ img {
 .footer-social-title,
 .modal-map-title,
 .main-header-title,
-.modal-feedback-title {
+.modal-feedback-title,
+.products-catalog-title {
   display: none;
 }
 
@@ -759,6 +852,7 @@ img {
 .manufacturers,
 .popular-products {
   background-color: var(--background-grey);
+  width: 940px;
   height: 89px;
 }
 
@@ -859,6 +953,13 @@ img {
 .map-button {
   width: 300px;
   height: 38px;
+}
+
+.main-blank-title {
+  font-size: 30px;
+  line-height: 30px;
+  margin: auto;
+  text-align: center;
 }
 
 /* Footer */
