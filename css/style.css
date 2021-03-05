@@ -81,7 +81,6 @@ font-style: italic;
 }
 
 .page {
-  width: 1200px;
   height: 100%;
   background-color: var(--basic-bacground);
 }
@@ -242,8 +241,6 @@ img {
 
 .list {
   display: grid;
-  width: 940px;
-  margin-left: 130px;
   margin-top: 20px;
   margin-bottom: 80px;
 }
@@ -269,7 +266,6 @@ img {
 
 .popular-manufacturers-list {
   display: grid;
-  width: 940px;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(2,1fr);
   gap: 17px;
@@ -473,10 +469,8 @@ img {
 /* Catalog. Main */
 
 .catalog-hammers {
-  width: 940px;
   height: 89px;
   background-color: var(--special-background);
-  margin-left: 130px;
 }
 
 .catalog-hammers .catalog-hammers-title {
@@ -582,7 +576,6 @@ img {
 
 .about-hammers {
   background-color: var(--special-background);
-  width: 1200px;
   height: 261px;
   font-size: 13px;
   line-height: 24px;
@@ -766,9 +759,7 @@ img {
 .manufacturers,
 .popular-products {
   background-color: var(--background-grey);
-  width: 940px;
   height: 89px;
-  margin-left: 130px;
 }
 
 .popular-manufacturers-list-item {
