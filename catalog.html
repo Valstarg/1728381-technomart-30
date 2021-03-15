@@ -20,7 +20,7 @@
     <header class="main-header">
 
       <div class="main-header-wrapper">
-        <div class="conteiner">
+        <div class="conteiner flex-conteiner">
           <div class="main-header-bar-top">
             <h2 class="main-header-title">Покупки</h2>
             <a class="main-header-logo">
@@ -57,9 +57,11 @@
                 <input class="search-input" type="text" name="search" placeholder="Поиск:">
               </label>
             </form>
-              <a class="top-navigation-bookmarks" href="blank.html">Закладки</a>
-              <a class="top-navigation-cart" href="blank.html">Корзина</a>
+            <div class="user-navigation">
+              <a class="top-navigation-bookmarks" href="blank.html">Закладки: 0</a>
+              <a class="top-navigation-cart top-navigation-cart-catalog" href="blank.html">Корзина: 10</a>
               <button class="top-navigation-button" type="button">Оформить заказ</button>
+            </div>
           </div>
         </div>
       </div>
@@ -67,6 +69,7 @@
       <div class="main-header-bar-bottom">
 
         <div class="main-header-bottom">
+
           <div class="about-us">
             <h1 class="title-text">
               Интернет-магазин<br>
@@ -74,16 +77,18 @@
               и инструментов для ремонта
             </h1>
           </div>
+
           <div class="main-contacts-div">
-            <p class="main-contacts">
-              <a class="main-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-              <br>
-                г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8
-            </p>
+              <div class="tel">
+                <a class="main-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+              </div>
+              <p class="main-contacts">
+                г.Санкт-Петербург,ул.Большая Конюшенная,д.19/8
+              </p>
           </div>
 
           <div class="authorization inner-authorization">
-            <button class="authorization-button-login authorization-button-logo" type="submit">Равшан Джамшутович</button>
+            <a class="authorization-link-logo" href="#">Равшан Джамшутович</a>
             <ul class="personal-list">
               <li class="personal-list-item">
                 <a class="personal-link" href="#">Мои заказы</a>
@@ -96,7 +101,7 @@
 
         </div>
 
-        <nav class="conteiner main-navigation">
+        <nav class="main-navigation">
           <ul class="main-navigation-list">
             <li class="main-navigation-list-item">
               <a class="main-navigation-link" href="index.html">Главная</a>
@@ -128,9 +133,9 @@
 
     <main class="page-catalog">
 
-      <div class="conteiner">
+      <div class="flex-conteiner">
 
-        <div class="main-catalog">
+        <!--<div class="main-catalog">-->
 
           <div class="breadcrumps-block">
             <ul class="breadcrumps-list">
@@ -145,7 +150,6 @@
               </li>
             </ul>
           </div>
-
 
           <div class="catalog-hammers">
             <h1 class="catalog-hammers-title">ПЕРФОРАТОРЫ</h1>
@@ -344,7 +348,7 @@
             </li>
           </ul>
 
-        </div>
+        <!--</div>-->
 
       </div>
 
