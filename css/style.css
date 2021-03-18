@@ -249,14 +249,15 @@ img {
 }
 
 .popular-products-list-item,
-.popular-manufacturers-list-item {
-  margin-top: 17px;
+.popular-manufacturers-list-item,
+.basic-products-list-item {
+  margin-top: 20px;
   margin-right: 17px;
 }
 
 .popular-products-list-item:last-child,
-.popular-manufacturers-list-item:last-child,
-.popular-manufacturers-list-item:nth-child(4) {
+.popular-manufacturers-list-item:nth-child(4n),
+.basic-products-list-item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -367,6 +368,10 @@ img {
 
 /* Flex. Catalog */
 
+.main-header-catalog {
+  margin-bottom: 0;
+}
+
 .top-navigation-bookmarks {
   margin-right: 20px;
 }
@@ -414,29 +419,163 @@ img {
 .breadcrumps-block {
   display: flex;
   width: 100%;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
 }
 
 .main-catalog {
   display: flex;
 }
 
+.main-catalog-page {
+  flex-wrap: nowrap;
+  margin-bottom: 59px;
+ }
+
+ .basic-products-list {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0;
+   margin: 0;
+ }
+
 .catalog-hammers {
   display: flex;
-  width: 940px;
+  width: inherit;
   height: 89px;
   background-color: var(--special-background);
+  margin-bottom: 20px;
 }
 
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 720px;
+  margin-right: 20px
+}
 
+.filter-title {
+  background-color: var(--background-dark);
+  height: 28px;
+  padding-left: 18px;
+  padding-top: 10px;
+  margin-top: 0;
+}
 
+.input-block {
+  background-color: var(--background-dark);
+  height: 80px;
+}
 
-/* Насчет Гита да, я заметил, не пойму что случилось. Завтра разберусь. С пулреквестом по странице каталога устраню проблему. Этот пулреквест отличается,- начал делать страницу каталога.
-                               Прошу пока не обращать внимания.)))) По главной странице в этом задании вроде все, цвет тени вынес в root */
+.input-range {
+  margin-top: 30px;
+  margin-left: 45px;
+}
 
+.filter-price {
+  height: 184px;
+  padding: 0;
+  margin-bottom: 42px;
+}
 
+.filter-manufacturers {
+  height: 220px;
+  padding-left: 0;
+  margin-bottom: 40px;
+}
 
+.filter-manufacturers-list-item,
+.filter-power-list-item {
+  margin-bottom: 20px;
+}
+
+.filter-power {
+  height: 110px;
+  padding-left: 0;
+}
+
+.filter-button {
+  width: 220px;
+  height: 38px;
+  background-color: var(--basic-bacground);
+  border: 1px solid var(--special-border);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.catalog-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sorting-list {
+  display: flex;
+  height: 38px;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-dark);
+}
+
+.sorting-title {
+  font-size: 13px;
+  line-height: 18px;
+  margin-left: 19px;
+  margin-right: 140px;
+  padding: 0;
+}
+
+.sorting-item {
+  margin-top: 5px;
+}
+
+.sorting-item:nth-child(2) {
+  margin-right: 70px;
+}
+
+.sorting-item:nth-child(3) {
+  margin-right: 65px;
+}
+
+.sorting-item:nth-child(4) {
+  margin-right: 46px;
+}
+
+.sorting-item:nth-child(5) {
+  margin-right: 21px;
+}
+
+.sorting-link {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  opacity: 0.3;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.sorting-link:hover {
+  color: var(--basic-black);
+  opacity: 1;
+  border-bottom: 1px solid var(--basic-red);
+}
+
+.sorting-link-slide .icon-down:hover,
+.sorting-link-slide .icon-up:hover {
+  fill: var(--basic-black)
+}
+
+.button-page-block {
+  margin-top: 48px;
+}
+
+.basic-products-pages-list {
+  display: flex;
+}
+
+.basic-products-pages-list-item {
+  margin-right: 10px;
+}
 
 /* Grid */
 
@@ -535,18 +674,6 @@ img {
   margin-bottom: 4px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Grid. Catalog */
 
 
@@ -556,69 +683,8 @@ img {
   margin-top: 29px;
 }
 
-.filter-title {
-  margin-left: 18px;
-  margin-top: 10px;
-}
-
-.sorting-title {
-  margin-top: 10px;
-  margin-left: 19px;
-}
-
 .about-hammers-title {
   margin-top: 64px;
-}
-
-.main-catalog {
-  display: grid;
-  grid-template-columns: 220px 700px;
-  grid-template-rows: 40px 89px 38px 1fr 140px;
-  gap: 20px;
-}
-
-.filter {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-
-.sorting {
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
-
-.price-range {
-  grid-column: 1/2;
-  grid-row: 4/5;
-}
-
-.basic-products {
-  grid-column: 2/3;
-  grid-row: 4/5;
-}
-
-.basic-products-pages-list {
-  grid-column: 2/3;
-  grid-row: 5/6;
-}
-
-.basic-products-list {
-  display: grid;
-  grid-template-columns: repeat(3,220px);
-  grid-template-rows: repeat(3,318px);
-  gap: 20px;
-}
-
-.filter-price {
-  height: 150px;
-}
-
-.filter-manufacturers {
-  height: 260px;
-}
-
-.filter-power {
-  height: 160px;
 }
 
 .filter-price,
@@ -631,15 +697,6 @@ img {
   display: grid;
   background-color: var(--special-background);
 }
-
-
-
-
-
-
-
-
-
 
 /* Navigation */
 
@@ -729,10 +786,6 @@ img {
   color: var(--basic-dark);
 }
 
-.filter {
-  background-color: var(--background-dark);
-}
-
 .filter-select {
   font-size: 17px;
   line-height: 30px;
@@ -743,44 +796,6 @@ img {
 .filter-power-list .filter-power-list-item {
   font-size: 15px;
   line-height: 19px;
-}
-
-.filter-button {
-  width: 220px;
-  height: 38px;
-  background-color: var(--basic-bacground);
-  border: 1px solid var(--special-border);
-  font-size: 13px;
-  line-height: 18px;
-}
-
-.sorting {
-  font-size: 13px;
-  line-height: 18px;
-  background-color: var(--background-dark);
-}
-
-.sorting-title {
-  font-size: 13px;
-  line-height: 18px;
-}
-
-.sorting-link {
-  color: var(--basic-black);
-  opacity: 0.3;
-  text-decoration: none;
-  border-bottom: 1px dotted var(--basic-red);
-}
-
-.sorting-link:hover {
-  color: var(--basic-black);
-  opacity: 1;
-  border-bottom: 1px solid var(--basic-red);
-}
-
-.sorting-link-slide .icon-down:hover,
-.sorting-link-slide .icon-up:hover {
-  fill: var(--basic-black)
 }
 
 .button-page-select {
@@ -801,9 +816,6 @@ img {
   border: 1px solid var(--special-border);
 }
 
-.basic-products-pages-list .basic-products-pages-list-item {
-  display: inline;
-}
 
 .button-page-select:hover,
 .button-page-next:hover {
@@ -855,10 +867,6 @@ img {
   height: 60px;
   background-color: var(--basic-dark);
 }
-
-/*.main-navigation-list .main-navigation-list-item {
-  display: inline;
-}*/
 
 .main-navigation-link {
   color: var(--basic-bacground);
