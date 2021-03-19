@@ -23,7 +23,7 @@
         <div class="conteiner flex-conteiner">
           <div class="main-header-bar-top">
             <h2 class="main-header-title">Покупки</h2>
-            <a class="main-header-logo">
+            <a class="main-header-logo" href="#">
               <svg width="108" height="18" viewBox="0 0 108 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M103.847 2.65853V17.4498H101.734V2.65853H97.9779V1.01506H107.604V2.65853H103.847ZM95.7123
                   11.3572C95.3444 11.819 94.8827 12.1477 94.327 12.3433C93.7714 12.539 93.1101 12.6368 92.3431 12.6368C91.9831 12.6368 91.5762 12.6133 91.1223
@@ -52,11 +52,13 @@
                   17.4498H4.53521V2.65853H0.778687V1.01506H10.4048V2.65853H6.64825V17.4498Z" fill="white"/>
               </svg>
             </a>
+
             <form class="search" action="https://echo.htmlacademy.ru" method="get">
-              <label>
+              <label class="input-label">
                 <input class="search-input" type="text" name="search" placeholder="Поиск:">
               </label>
             </form>
+
             <div class="user-navigation">
               <a class="top-navigation-bookmarks" href="blank.html">Закладки: 0</a>
               <a class="top-navigation-cart" href="blank.html">Корзина: 0</a>
@@ -96,7 +98,6 @@
 
         <nav class="main-navigation">
           <ul class="main-navigation-list">
-            <li class="main-navigation-list-item">
               <a class="main-navigation-link" href="index.html">Главная</a>
             </li>
             <li class="main-navigation-list-item">
@@ -129,37 +130,67 @@
       <section class="features">
 
         <div class="offers">
+
           <h2 class="offers-main-title">У нас есть</h2>
           <div class="offers-list-item offers-item1">
+            <span class="span">NEW</span>
             <h3 class="offers-title">Материалы</h3>
+            <img class="features-image" src="img/simbols/materials-icon.svg" alt="Иконка">
             <button class="materials-button" type="button">НА ЛЮБОЙ ВКУС</button>
           </div>
+
           <div class="offers-list-item offers-item2">
             <h3 class="offers-title">Инструмент</h3>
+            <img class="features-image-2" src="img/simbols/hammer-icon.svg" alt="Иконка">
             <button class="tools-button" type="button">НА ВСЕ СЛУЧАИ</button>
           </div>
+
           <div class="offers-list-item offers-item3">
             <h3 class="offers-title">Техника</h3>
+            <img class="features-image-3" src="img/simbols/technicks-icon.svg" alt="Иконка">
             <button class="equipment-button" type="button">ДЛЯ СТРОЙКИ</button>
           </div>
+
           <div class="offers-list-item offers-item4">
             <h3 class="offers-title">Скидки 50%</h3>
+            <img class="features-image-4" src="img/simbols/sale-icon.svg" alt="Иконка">
             <button class="sale-button" type="button">НА 350 ТОВАРОВ</button>
           </div>
+
           <div class="offers-list-item offers-item5">
             <h3 class="offers-title">Доставка</h3>
+            <img class="features-image-5" src="img/simbols/delivery-icon.svg" alt="Иконка">
             <button class="delivery-button" type="button">БЕСПЛАТНО</button>
           </div>
+
           <div class="hammers offers-item6">
+
+            <!-- <img class="slide-img" src="img/slider.jpg" width="620" height="266" alt="Перфоратор в работе">
+            <img class="slide-img" src="img/slider-2.jpg" width="620" height="266" alt="Дрель на радость соседям">            Пока не решил, как буду делать слайдер-->
+
             <h2 class="slider-offers-title">ПЕРФОРАТОРЫ</h2>
             <p class="slider-description">Настоящие мужские игрушки</p>
+
             <div class="next-back-button">
-              <button class="button hammers-button-back" type="button">Назад</button>
-              <button class="button hammers-button-next" type="button">Вперед</button>
+
+              <button class="hammers-button-back" type="button">
+                <svg class="button-back-svg" width="23" height="41" viewBox="0 0 23 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.83 0.965027L22.919 3.06403L5.13 20.947L22.977 38.886L20.887 40.985L0.951996 20.947L20.83 0.965027Z" fill="white"/>
+                </svg>
+              </button>
+
+              <button class="hammers-button-next" type="button">
+                <svg class="button-next-svg" width="23" height="41" viewBox="0 0 23 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.83 0.965027L22.919 3.06403L5.13 20.947L22.977 38.886L20.887 40.985L0.951996 20.947L20.83 0.965027Z" fill="white"/>
+                </svg>
+              </button>
+
             </div>
-            <br>
+
             <button class="button catalog-button" type="button">ОТКРЫТЬ КАТАЛОГ</button>
+
           </div>
+
         </div>
 
       </section>
@@ -174,47 +205,49 @@
 
           <ul class="popular-products-list">
             <li class="popular-products-list-item">
-              <img src="img/tools/bfg9.jpg" width="184" height="164" alt="Модель BOSCH BFG 9000">
-              <h3>
-                Перфоратор BOSCH<br>
+              <div class="image">
+                <img src="img/tools/bfg9.jpg" width="184" height="164" alt="Модель BOSCH BFG 9000">
+              </div>
+              <h3 class="popular-hammers-title">
+                Перфоратор BOSCH
                 BFG 9000
               </h3>
               <del class="price-delete">32500</del>
-              <br>
               <a class="price" href="#">25500</a>
             </li>
             <li class="popular-products-list-item">
-              <span class="model-new">NEW</span>
-              <br>
-              <img src="img/tools/bfg32.jpg" width="127" alt="Модель BOSCH BFG 3000">
-              <h3>
-                Перфоратор BOSCH<br>
+              <div class="image">
+                <span class="span span-2">NEW</span>
+                <img class="img" src="img/tools/bfg32.jpg" width="127" height="112" alt="Модель BOSCH BFG 3000">
+              </div>
+              <h3 class="popular-hammers-title">
+                Перфоратор BOSCH
                 BFG 3000
               </h3>
               <del class="price-delete">22500</del>
-              <br>
               <a class="price" href="#">15500</a>
             </li>
             <li class="popular-products-list-item">
-              <img src="img/tools/bfg6.jpg" width="144" height="128" alt="Модель BOSCH BFG 6000">
-              <h3>
-                Перфоратор BOSCH<br>
+              <div class="image">
+                <img class="img-2" src="img/tools/bfg6.jpg" width="144" height="128" alt="Модель BOSCH BFG 6000">
+              </div>
+              <h3 class="popular-hammers-title">
+                Перфоратор BOSCH
                 BFG 6000
               </h3>
               <del class="price-delete">30500</del>
-              <br>
               <a class="price" href="#">25500</a>
             </li>
             <li class="popular-products-list-item">
-              <span class="model-new">NEW</span>
-              <br>
-              <img src="img/tools/bfg32.jpg" width="127" height="112" alt="Модель BOSCH BFG 2000">
-              <h3>
-                Перфоратор BOSCH<br>
+              <div class="image">
+                <span class="span span-2">NEW</span>
+                <img class="img" src="img/tools/bfg32.jpg" width="127" height="112" alt="Модель BOSCH BFG 2000">
+              </div>
+              <h3 class="popular-hammers-title">
+                Перфоратор BOSCH
                 BFG 2000
               </h3>
               <del class="price-delete">22500</del>
-              <br>
               <a class="price" href="#">12500</a>
             </li>
           </ul>
@@ -233,42 +266,42 @@
 
           <ul class="popular-manufacturers-list">
             <li class="popular-manufacturers-list-item">
-              <a href="#">
+              <a class="manufacturers-link" href="#">
                 <img src="img/manufacturers/bosch.png" width="126" height="37" alt="Фирма BOSCH">
               </a>
             </li>
             <li class="popular-manufacturers-list-item">
-              <a href="#">
+              <a class="manufacturers-link" href="#">
                 <img src="img/manufacturers/makita.png" width="123" height="40" alt="Фирма MAKITA">
               </a>
             </li>
             <li class="popular-manufacturers-list-item">
-              <a href="#">
+              <a class="manufacturers-link" href="#">
                 <img src="img/manufacturers/dewalt.png" width="146" height="44" alt="Фирма DEWALT">
               </a>
             </li>
             <li class="popular-manufacturers-list-item">
-              <a href="#">
+              <a class="manufacturers-link" href="#">
                 <img src="img/manufacturers/interskol.png" width="200" height="75" alt="Фирма ИНТЕРСКОЛ">
               </a>
             </li>
             <li class="popular-manufacturers-list-item">
-              <a href="#">
+              <a class="manufacturers-link" href="#">
                 <img src="img/manufacturers/hitachi.png" width="169" height="31" alt="Фирма HITACHI">
               </a>
             </li>
             <li class="popular-manufacturers-list-item">
-              <a href="#">
+              <a class="manufacturers-link" href="#">
                 <img src="img/manufacturers/lg.png" width="121" height="73" alt="Фирма LG">
               </a>
             </li>
             <li class="popular-manufacturers-list-item">
-              <a href="#">
+              <a class="manufacturers-link" href="#">
                 <img src="img/manufacturers/aeg.png" width="151" height="96" alt="Фирма AEG">
               </a>
             </li>
             <li class="popular-manufacturers-list-item">
-              <a href="#">
+              <a class="manufacturers-link" href="#">
                 <img src="img/manufacturers/metabo.png" width="204" height="69" alt="Фирма METABO">
               </a>
             </li>
