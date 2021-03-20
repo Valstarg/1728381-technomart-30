@@ -8,6 +8,7 @@
   --basic-dark: #32425c;
   --bacground-dark-white: #f1f1f1;
   --basic-red: #ee3643;
+  --basic-red-rgba: rgba(238, 54, 67, 1);
   --succes: #63a63e;
   --succes2: #5fbb2d;
   --special-yellow: #ffbf47;
@@ -29,6 +30,7 @@
   --stroke: #eaeaea;
   --services-button: #cfc970;
   --basic-black: #000000;
+  --basic-black-rgba: rgba(0, 0, 0, 0.5);
   --special-border: #e5e5e5;
   --logo-shadow: rgb(158, 9, 9);
   --navigation-text-button: rgba(255, 255, 255, 0.5);
@@ -40,6 +42,10 @@
   --next-back-button: rgba(255,255,255,0);
   --products-shadow: rgba(0, 0, 0, 0.2);
   --products-shadow-focus: rgba(0, 0, 0, 0.1);
+  --toggle: #ababab;
+  --toggle-shadow: #cfcfcf;
+  --scale: #d7dcde;
+  --footer-text: #f3f7f9;
 }
 
 @font-face {
@@ -90,74 +96,6 @@ font-weight: 700;
 font-style: italic;
 }
 
-
-
-
-
-
-                                                  /* Декоративные элементы страницы каталога. Прошу не обращать внимания, сегодня попробую успеть))) */
-
-
-
-
-
-.inner-authorization {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 299px;
-}
-
-.authorization-link-logo {
-  text-decoration: none;
-  text-align: center;
-  color: var(--basic-black);
-  padding-top: 12px;
-  margin-bottom: 10px;
-  font-size: 21px;
-  line-height: 21px;
-  background-color: var(--basic-bacground);
-  width: 299px;
-  height: 33px
-}
-
-.authorization-link-logo:hover {
-  color: var(--basic-black);
-}
-
-.authorization-link-logo:focus {
-  color: var(--styleguid-login);
-}
-
-.personal-list-item .personal-link {
-  text-decoration: none;
-  color: var(--basic-black);
-}
-
-.personal-list-item .personal-link:hover {
-  color: var(--basic-red);
-}
-
-.personal-list {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.personal-list .personal-list-item {
-  display: inline;
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.personal-list-item .personal-linl:focus {
-  color: var(--styleguid-login);
-}
-
-
-
-
-
 .page {
   height: 100%;
   background-color: var(--basic-bacground);
@@ -201,8 +139,6 @@ img {
   background-image: url(../img/logo-background-click.png);
 }
 
-/* Search bar */
-
 .input-label {
   position: relative;
   width: 271px;
@@ -227,6 +163,22 @@ img {
   padding-left: 45px;
   background-color: var(--basic-grey);
   border: none;
+}
+
+.slider-description,
+.footer-contacts,
+.footer-contacts-phone,
+.main-navigation-link,
+.top-navigation-cart,
+.top-navigation-bookmarks,
+.top-navigation-button,
+.search-input::placeholder {
+  color: var(--basic-bacground);
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .search-input:focus::placeholder {
@@ -357,11 +309,46 @@ img {
   height: 60px;
 }
 
+.authorization-link-logo,
 .authorization-button-login,
 .authorization-button-registration {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.authorization-button-login {
+  position: relative;
   width: 121px;
-  height: 45px;
+  padding-left: 45px;
+}
+
+.authorization-button-login::before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 14px;
+  width: 21px;
+  height: 17px;
+  background-image: url(../img/simbols/icon-login.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.authorization-button-login:hover::before {
+  background-image: url(../img/simbols/icon-login-hover.svg);
+}
+
+.authorization-button-registration {
+  width: 150px;
+}
+
+.authorization-button-login,
+.authorization-button-registration {
   background-color: var(--basic-bacground);
+  height: 45px;
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -376,6 +363,7 @@ img {
 .authorization-button-login:focus,
 .authorization-button-registration:focus {
   color: var(--styleguid-login);
+  outline: none;
 }
 
 /* Flex */
@@ -417,10 +405,18 @@ img {
   margin-bottom: 40px;
 }
 
+.about-us {
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
+}
+
 .title-text {
   color: var(--basic-red);
-  font-size: 16px;
+  font-family: "Cuprum";
   font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 25px;
   padding: 0;
   margin: 0;
@@ -429,19 +425,26 @@ img {
 .main-contacts-div {
   display: flex;
   flex-direction: column;
-  max-width: 270px;
+  max-width: 280px;
 }
 
 .main-contacts {
-  font-size: 12px;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 24px;
+  width: 275px;
+  padding: 0;
   color: var(--basic-dark);
 }
 
 .main-contacts-phone {
   color: var(--basic-red);
-  font-size: 21px;
+  font-family: "Cuprum";
+  font-style: normal;
   font-weight: 700;
+  font-size: 21px;
   line-height: 30px;
   text-decoration: none;
 }
@@ -466,6 +469,17 @@ img {
   align-items: center;
 }
 
+.about-hammers-title,
+.services-title,
+.company-title,
+.contacts-title {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+}
+
 .popular-products-title {
   float: left;
   margin-left: 28px;
@@ -479,7 +493,8 @@ img {
 }
 
 .popular-products-list,
-.popular-manufacturers-list {
+.popular-manufacturers-list,
+.basic-products-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -556,6 +571,15 @@ img {
   justify-content: flex-end;
 }
 
+.footer-navigation-list-item .footer-navigation-link {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--special-background);
+}
+
 .footer-navigation-list-item,
 .footer-navigation-list-item2 {
   margin-right: 50px;
@@ -623,13 +647,6 @@ img {
   margin-bottom: 59px;
  }
 
- .basic-products-list {
-   display: flex;
-   flex-wrap: wrap;
-   padding: 0;
-   margin: 0;
- }
-
 .catalog-hammers {
   display: flex;
   width: inherit;
@@ -646,44 +663,205 @@ img {
   margin-right: 20px
 }
 
+.filter-price {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 220px;
+  margin-top: 11px;
+}
+
 .filter-title {
-  background-color: var(--background-dark);
   height: 28px;
-  padding-left: 18px;
-  padding-top: 10px;
   margin-top: 0;
+  padding-top: 10px;
+  padding-left: 18px;
+  background-color: var(--background-dark);
+}
+
+.filter-select {
+  font-family: "PT Sans";
+  font-size: 17px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .input-block {
+  position: relative;
+  height: 41px;
+  margin-bottom: 9px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: var(--background-dark);
-  height: 80px;
 }
 
-.input-range {
-  margin-top: 30px;
-  margin-left: 45px;
+.scale {
+  height: 2px;
+  background-color: var(--scale);
 }
 
-.filter-price {
-  height: 184px;
+.bar {
+  width: 152px;
+  height: 2px;
+  background: var(--styleguid-words);
+}
+
+.toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
   padding: 0;
-  margin-bottom: 42px;
+  border: 8px solid var(--basic-bacground);
+  background-color: var(--toggle);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--toggle-shadow);
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: 20px;
+}
+
+.toggle-max {
+  left: 152px;
+}
+
+.input-price {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 38px;
+}
+
+.min-price-input,
+.max-price-input {
+  width: 95px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: var(--basic-black);
+  border: none;
+  background: var(--background-dark);
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.dash {
+  padding-top: 6px;
+}
+
+.fieldset-checkbox {
+  height: 272px;
+  margin-top: 25px;
+  border-top: 1px solid var(--stroke);
 }
 
 .filter-manufacturers {
-  height: 220px;
-  padding-left: 0;
-  margin-bottom: 40px;
+  height: 272px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  border: none;
 }
 
-.filter-manufacturers-list-item,
-.filter-power-list-item {
-  margin-bottom: 20px;
+.filter-select-2 {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.filter-select-3 {
+  padding-top: 16px;
+}
+
+.my-checkbox,
+.my-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.my-radio+label,
+.my-checkbox+label {
+  display: flex;
+  align-items: center;
+}
+
+.my-checkbox+label::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 23px;
+  background-image: url(../img/simbols/checkbox-off.svg);
+  margin-right: 12px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.my-checkbox:checked+label::before {
+  background-image: url("../img/simbols/checkbox-on.svg");
+  padding-left: 5px;
+  margin-right: 7px;
+}
+
+.my-checkbox+label:hover::before {
+  background-image: url(../img/simbols/checkbox-off-hover.svg);
+}
+
+.my-checkbox:checked+label:hover::before {
+  background-image: url(../img/simbols/checkbox-on-hover.svg);
+}
+
+.my-radio+label::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/simbols/radio-off.svg);
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.my-radio:checked+label::before {
+  background-image: url("../img/simbols/radio-on.svg");
+  margin-right: 10px;
+}
+
+.my-radio+label:hover::before {
+  background-image: url(../img/simbols/radio-off-hover.svg);
+}
+
+.my-radio:checked+label:hover::before {
+  background-image: url(../img/simbols/radio-on-hover.svg);
+}
+
+.filter-manufacturers-list {
+  border: none;
+  border-bottom: 1px solid var(--stroke);
+}
+
+.filter-manufacturers-list-item {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .filter-power {
-  height: 110px;
-  padding-left: 0;
+  height: max-content;
+  padding: 0;
+}
+
+.filter-power-list-item {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .filter-button {
@@ -691,8 +869,11 @@ img {
   height: 38px;
   background-color: var(--basic-bacground);
   border: 1px solid var(--special-border);
-  font-size: 13px;
-  line-height: 18px;
+  outline: none;
+}
+
+.filter-button:hover {
+  border: 1px solid var(--basic-red);
 }
 
 .catalog-section {
@@ -711,8 +892,6 @@ img {
 }
 
 .sorting-title {
-  font-size: 13px;
-  line-height: 18px;
   margin-left: 19px;
   margin-right: 140px;
   padding: 0;
@@ -739,23 +918,29 @@ img {
 }
 
 .sorting-link {
-  font-size: 13px;
-  line-height: 18px;
-  color: var(--basic-black);
-  opacity: 0.3;
+  color: var(--basic-black-rgba);
   text-decoration: none;
   border-bottom: 1px dotted var(--basic-red);
 }
 
 .sorting-link:hover {
   color: var(--basic-black);
-  opacity: 1;
   border-bottom: 1px solid var(--basic-red);
 }
 
-.sorting-link-slide .icon-down:hover,
-.sorting-link-slide .icon-up:hover {
-  fill: var(--basic-black)
+.sorting-link:focus {
+  color: var(--basic-red);
+  border-bottom: none;
+}
+
+.icon-down:hover,
+.icon-up:hover {
+  fill: var(--basic-black);
+}
+
+.icon-down:focus,
+.icon-up:focus {
+  fill: var(--basic-red);
 }
 
 .button-page-block {
@@ -804,7 +989,11 @@ img {
 }
 
 .offers-title {
+  font-family: "Cuprum";
+  font-style: normal;
   font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
   margin-left: 23px;
   margin-top: 20px;
   margin-bottom: 15px;
@@ -872,6 +1061,14 @@ img {
   margin-bottom: 4px;
 }
 
+.services-table-item {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+}
+
 /* Grid. Catalog */
 
 .catalog-hammers-title {
@@ -883,8 +1080,6 @@ img {
   margin-top: 64px;
 }
 
-.filter-price,
-.filter-manufacturers,
 .filter-power {
   border: none;
 }
@@ -896,18 +1091,177 @@ img {
 
 /* Catalog. Header */
 
+.inner-authorization {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 299px;
+}
+
+.authorization-link-logo {
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  color: var(--basic-black);
+  padding-top: 12px;
+  margin-bottom: 10px;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--basic-bacground);
+  width: 299px;
+  height: 33px
+}
+
+.authorization-link-logo::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 20px;
+  height: 18px;
+  background-image: url(../img/simbols/icon-user.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.authorization-link-logo::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 16px;
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/simbols/icon-logout.svg);
+  background-position: 0 0;
+}
+
+.authorization-link-logo:hover::before {
+  background-image: url(../img/simbols/icon-user-hover.svg);
+}
+
+.authorization-link-logo:hover::after {
+  background-image: url(../img/simbols/icon-logout-hover.svg);
+}
+
+.authorization-link-logo:focus::before {
+  background-image: url(../img/simbols/icon-user.svg);
+}
+
+.authorization-link-logo:focus::after {
+  background-image: url(../img/simbols/icon-logout.svg);
+}
+
+.authorization-link-logo:hover {
+  color: var(--basic-black);
+}
+
+.authorization-link-logo:focus {
+  color: var(--styleguid-login);
+}
+
+.personal-list {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  height: 18px;
+  position: relative;
+}
+
+.personal-list::before {
+  content: "";
+  position: absolute;
+  left: 104px;
+  top: 7px;
+  width: 6px;
+  height: 7px;
+  background-image: url(../img/simbols/user-point.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.personal-list-item {
+  display: inline;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.personal-link {
+  text-decoration: none;
+  color: var(--basic-black);
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.personal-link:hover {
+  color: var(--basic-red);
+}
+
+.personal-link:focus {
+  color: var(--styleguid-login);
+}
+
 /* Breadcrumps */
 
+.breadcrumps-block {
+  position: relative;
+  margin-top: 21px;
+  margin-bottom: 20px;
+}
+
+.breadcrumps-block::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 14px;
+  height: 12px;
+  background-image: url(../img/simbols/icon-home.svg);
+  background-position: 0 0;
+}
+
+.breadcrumps-list {
+  display: flex;
+  width: 100%;
+}
+
 .breadcrumps-list-item {
-  display: inline;
+  position: relative;
+  padding-left: 25px;
+  margin-left: 25px;
+}
+
+.breadcrumps-list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 8px;
+  height: 14px;
+  background-image: url(../img/simbols/icon-right-small.svg);
+  background-position: 0 0;
+}
+
+.breadcrumps-link,
+.filter-title,
+.sorting-title,
+.sorting-link,
+.filter-button,
+.button-page-select,
+.button-page-next {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .breadcrumps-link,
 .filter-title {
   color: var(--basic-black);
   text-decoration: none;
-  font-size: 13px;
-  line-height: 18px;
 }
 
 /* Catalog. Main */
@@ -918,36 +1272,44 @@ img {
   color: var(--basic-dark);
 }
 
-.filter-select {
-  font-size: 17px;
-  line-height: 30px;
-  font-weight: 700;
-}
-
 .filter-manufacturers-list-item,
 .filter-power-list-item {
   font-size: 15px;
   line-height: 19px;
 }
 
+.firms,
+.power {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+
 .button-page-select {
-  font-size: 13px;
-  line-height: 18px;
   width: 38px;
   height: 38px;
   background-color: var(--basic-bacground);
   border: 1px solid var(--special-border);
+  border-radius: 2px;
+}
+
+.button-page-select-active {
+  background-color: var(--basic-red);
 }
 
 .button-page-next {
-  font-size: 13px;
-  line-height: 18px;
   width: 140px;
   height: 38px;
   background-color: var(--basic-bacground);
   border: 1px solid var(--special-border);
+  border-radius: 2px;
 }
 
+.price-delete-2 {
+  visibility: hidden;
+}
 
 .button-page-select:hover,
 .button-page-next:hover {
@@ -957,6 +1319,7 @@ img {
 .button-page-select:focus,
 .button-page-next:focus {
   border: 1px solid var(--basic-red);
+  outline: none;
 }
 
 .about-hammers .about-hammers-title {
@@ -1034,16 +1397,19 @@ img {
 }
 
 .span {
-  width: 100px;
+  width: 110px;
   height: 25px;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
   position: absolute;
   left: 225px;
   top: 10px;
-  font-size: 14px;
-  line-height: 18px;
   color: var(--basic-bacground);
   text-align: center;
-  padding-top: 5px;
+  padding-top: 7px;
   background-color: var(--basic-red);
   transform: rotate(45deg);
 }
@@ -1075,9 +1441,10 @@ img {
 .image {
   height: 150px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   position: relative;
   overflow: hidden;
+  object-fit: contain;
 }
 
 .img {
@@ -1103,7 +1470,12 @@ img {
   border: 1px solid var(--stroke);
 }
 
-.popular-hammers-title {
+.popular-hammers-title,
+.basic-hammers-title {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
   margin: 0;
   margin-bottom: 8px;
 }
@@ -1111,6 +1483,7 @@ img {
 .popular-manufacturers-list-item {
   width: 220px;
   height: 145px;
+  object-fit: contain;
   border: 1px solid var(--stroke);
 }
 
@@ -1137,6 +1510,8 @@ img {
 }
 
 .slider-offers-title {
+  font-family: "Cuprum";
+  font-style: normal;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
@@ -1168,6 +1543,9 @@ img {
 .equipment-button,
 .sale-button,
 .delivery-button {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-bacground);
@@ -1195,10 +1573,14 @@ img {
   outline: none;
 }
 
+.catalog-hammers-title,
 .popular-products-title,
 .manufacturers-title,
 .services-title-delivery {
   color: var(--basic-dark);
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
 }
@@ -1208,8 +1590,6 @@ img {
   width: 141px;
   height: 29px;
   color: var(--basic-bacground);
-  font-size: 17px;
-  line-height: 18px;
   padding-top: 9px;
   margin-bottom: 21px;
   text-decoration: none;
@@ -1220,6 +1600,15 @@ img {
 .price-delete {
   color: var(--styleguid-icon3);
   margin-bottom: 14px;
+}
+
+.price,
+.price-delete {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .popular-products-list-item:hover,
@@ -1240,11 +1629,13 @@ img {
   text-align: center;
 }
 
+.about-hammers-paragraph,
 .services-description,
 .delivery-description,
 .about-company-description,
 .delivery-description,
 .contacts-description {
+  font-family: "PT sans";
   font-size: 13px;
   line-height: 24px;
 }
@@ -1268,6 +1659,7 @@ img {
   background-color: var(--basic-grey);
 }
 
+.breadcrumps-list,
 .personal-list,
 .breadcrumps,
 .filter-manufacturers-list,
@@ -1291,17 +1683,15 @@ img {
   color: var(--basic-dark);
 }
 
-.about-company .company-title,
-.contacts .contacts-title,
-.services .services-title {
-  font-size: 30px;
-  line-height: 30px;
-}
-
 .delivery-list-item {
   position: relative;
   margin-bottom: 12px;
   padding-left: 37px;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .delivery-list-item::before {
@@ -1328,6 +1718,9 @@ img {
   border: none;
   background-color: var(--basic-red);
   color: var(--basic-bacground);
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
@@ -1347,6 +1740,9 @@ img {
 }
 
 .main-blank-title {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
   font-size: 30px;
   line-height: 30px;
   margin: auto;
@@ -1364,6 +1760,13 @@ img {
   background-color: var(--basic-dark);
 }
 
+.footer-contacts,
+.footer-contacts-phone {
+  color: var(--footer-text);
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .footer-navigation .footer-navigation-link,
 .footer-contacts,
 .footer-contacts .footer-contacts-phone {
@@ -1373,6 +1776,8 @@ img {
 
 .footer-navigation-list-item2 .footer-navigation-link {
   color: var(--special-yellowlight);
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .footer-navigation-list-item .footer-navigation-link:hover,
@@ -1396,6 +1801,9 @@ img {
 .footer-copyright,
 .technomart {
   color: var(--basic-bacground);
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
 }
