@@ -15,185 +15,209 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="page-body">
+  <body class="body">
 
-    <header class="main-header">
+    <header class="header">
 
-      <div class="main-header-wrapper">
-        <div class="conteiner flex-conteiner">
-          <div class="main-header-bar-top">
-            <h2 class="main-header-title">Покупки</h2>
-            <a class="main-header-logo" href="index.html">
-              <svg width="108" height="18" viewBox="0 0 108 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M103.847 2.65853V17.4498H101.734V2.65853H97.9779V1.01506H107.604V2.65853H103.847ZM95.7123
-                  11.3572C95.3444 11.819 94.8827 12.1477 94.327 12.3433C93.7714 12.539 93.1101 12.6368 92.3431 12.6368C91.9831 12.6368 91.5762 12.6133 91.1223
-                  12.5664C90.6683 12.5194 90.2927 12.4646 89.9953 12.402V17.4498H87.8823V1.24984C88.477 1.07766 89.0757 0.95636 89.6783 0.885926C90.281 0.815491
-                  90.9344 0.780273 91.6388 0.780273C92.5779 0.780273 93.3762 0.8781 94.0336 1.07375C94.6909 1.2694 95.2231 1.59419 95.6301 2.0481C96.037 2.50201
-                  96.3344 3.10462 96.5223 3.85593C96.7101 4.60723 96.804 5.53853 96.804 6.64984C96.804 7.79245 96.714 8.74723 96.534 9.51419C96.354 10.2811
-                  96.0801 10.8955 95.7123 11.3572ZM94.5149 4.5368C94.3975 3.97332 94.2136 3.52723 93.9631 3.19853C93.7127 2.86984 93.3957 2.63897 93.0123
-                  2.50593C92.6288 2.37288 92.1709 2.30636 91.6388 2.30636H89.9953V10.9933H91.6388C92.1709 10.9933 92.6288 10.9268 93.0123 10.7938C93.3957
-                  10.6607 93.7127 10.4298 93.9631 10.1011C94.2136 9.77245 94.3975 9.32636 94.5149 8.76288C94.6322 8.1994 94.6909 7.49506 94.6909 6.64984C94.6909
-                  5.80462 94.6322 5.10027 94.5149 4.5368ZM82.5996 13.2238H77.904L76.8475 17.4498H74.7344L78.7257 1.01506H81.7779L85.7692 17.4498H83.6562L82.5996
-                  13.2238ZM80.2988 3.36288H80.2049L78.2562 11.5803H82.2475L80.2988 3.36288ZM70.1562 5.24114H70.0388L66.6344 15.3368H64.5214L61.117 5.24114H60.9996L60.2953
-                  17.4498H58.1823L59.1214 1.01506H61.704L65.5309 12.2846H65.6249L69.4518 1.01506H72.0344L72.9736 17.4498H70.8605L70.1562 5.24114ZM54.3788 15.9238C53.9405
-                  16.5655 53.4123 17.0194 52.794 17.2855C52.1757 17.5516 51.4675 17.6846 50.6692 17.6846C49.8709 17.6846 49.1627 17.5516 48.5444 17.2855C47.9262 17.0194
-                  47.3979 16.5655 46.9596 15.9238C46.5214 15.282 46.1888 14.4172 45.9618 13.3294C45.7349 12.2416 45.6214 10.8759 45.6214 9.23245C45.6214 7.58897 45.7349
-                  6.22332 45.9618 5.13549C46.1888 4.04766 46.5214 3.18288 46.9596 2.54114C47.3979 1.8994 47.9262 1.44549 48.5444 1.1794C49.1627 0.913317 49.8709 0.780273
-                  50.6692 0.780273C51.4675 0.780273 52.1757 0.913317 52.794 1.1794C53.4123 1.44549 53.9405 1.8994 54.3788 2.54114C54.817 3.18288 55.1496 4.04766 55.3766
-                  5.13549C55.6036 6.22332 55.717 7.58897 55.717 9.23245C55.717 10.8759 55.6036 12.2416 55.3766 13.3294C55.1496 14.4172 54.817 15.282 54.3788 15.9238ZM53.3575
-                  5.75766C53.1931 4.84984 52.9779 4.12984 52.7118 3.59766C52.4457 3.06549 52.1327 2.69766 51.7727 2.49419C51.4127 2.29071 51.0449 2.18897 50.6692
-                  2.18897C50.2936 2.18897 49.9257 2.29071 49.5657 2.49419C49.2057 2.69766 48.8927 3.06549 48.6266 3.59766C48.3605 4.12984 48.1453 4.84984 47.9809
-                  5.75766C47.8166 6.66549 47.7344 7.82375 47.7344 9.23245C47.7344 10.6411 47.8166 11.7994 47.9809 12.7072C48.1453 13.6151 48.3605 14.3351 48.6266
-                  14.8672C48.8927 15.3994 49.2057 15.7672 49.5657 15.9707C49.9257 16.1742 50.2936 16.2759 50.6692 16.2759C51.0449 16.2759 51.4127 16.1742 51.7727
-                  15.9707C52.1327 15.7672 52.4457 15.3994 52.7118 14.8672C52.9779 14.3351 53.1931 13.6151 53.3575 12.7072C53.5218 11.7994 53.604 10.6411 53.604 9.23245C53.604
-                  7.82375 53.5218 6.66549 53.3575 5.75766ZM40.6909 9.9368H35.7605V17.4498H33.6475V1.01506H35.7605V8.29332H40.6909V1.01506H42.804V17.4498H40.6909V9.9368ZM29.5396
-                  17.4498L26.6048 10.4064L23.67 17.4498H21.5569L25.0787 8.99766L21.9091 1.01506H24.0222L26.6048 7.58897L29.1874 1.01506H31.3004L28.1309 8.99766L31.6526
-                  17.4498H29.5396ZM12.283 1.01506H20.2656V2.65853H14.3961V8.05853H19.5613V9.70201H14.3961V15.8064H20.2656V17.4498H12.283V1.01506ZM6.64825
-                  17.4498H4.53521V2.65853H0.778687V1.01506H10.4048V2.65853H6.64825V17.4498Z" fill="white"/>
-              </svg>
+      <div class="header__wrapper">
+
+        <div class="conteiner flex__conteiner">
+
+          <div class="header__bar-top">
+
+            <h2 class="visually-hidden">Покупки</h2>
+
+            <a class="header__logo" href="index.html">
+              <img src="img/tech.svg" alt="Логотип">
             </a>
-            <form class="search" action="https://echo.htmlacademy.ru" method="get">
-              <label>
-                <input class="search-input" type="text" name="search" placeholder="Поиск:">
+
+            <form class="header__search" action="https://echo.htmlacademy.ru" method="get">
+
+              <label class="header__search__label">
+                <input class="header__input" type="text" name="search" placeholder="Поиск:">
               </label>
+
             </form>
-            <div class="user-navigation">
-              <a class="top-navigation-bookmarks" href="blank.html">Закладки: 0</a>
-              <a class="top-navigation-cart" href="blank.html">Корзина: 0</a>
-              <button class="top-navigation-button" type="button">Оформить заказ</button>
+
+            <div class="header__navigation">
+
+              <a class="navigation__bookmarks" href="blank.html">Закладки: 0</a>
+              <a class="navigation__cart" href="blank.html">Корзина: 0</a>
+              <button class="navigation__button" type="button">Оформить заказ</button>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
 
-      <div class="main-header-bar-bottom">
+      <div class="header__bar-bottom">
 
-        <div class="main-header-bottom">
+        <div class="header__bottom">
 
-          <div class="about-us">
-            <h1 class="title-text">
+          <div class="header__description">
+
+            <h1 class="header__description__text">
               Интернет-магазин<br>
               строительных материалов<br>
               и инструментов для ремонта
             </h1>
+
           </div>
 
-          <div class="main-contacts-div">
-              <div class="tel">
-                <a class="main-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-              </div>
-              <p class="main-contacts">
-                г.Санкт-Петербург,ул.Большая Конюшенная,д.19/8
-              </p>
+          <div class="header__contacts">
+
+            <div class="header__phone">
+              <a class="header__phone__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </div>
+
+            <p class="header__address">
+              г.Санкт-Петербург,ул.Большая Конюшенная,д.19/8
+            </p>
+
           </div>
 
-          <div class="authorization">
-            <button class="authorization-button-login" type="submit">Войти</button>
-            <button class="authorization-button-registration" type="submit">Регистрация</button>
+          <div class="header__authorization">
+
+            <button class="authorization__login" type="submit">Войти</button>
+            <button class="authorization__registration" type="submit">Регистрация</button>
+
           </div>
 
         </div>
 
-        <nav class="main-navigation">
-          <ul class="main-navigation-list">
-            <li class="main-navigation-list-item">
-              <a class="main-navigation-link" href="index.html">Главная</a>
+        <nav class="main__navigation">
+
+          <ul class="main__navigation__list">
+
+            <li class="main__navigation__item">
+              <a class="main__navigation__link" href="index.html">Главная</a>
             </li>
-            <li class="main-navigation-list-item">
-              <a class="main-navigation-link" href="index.html">Компания</a>
+
+            <li class="main__navigation__item">
+              <a class="main__navigation__link" href="index.html#about">Компания</a>
             </li>
-            <li class="main-navigation-list-item">
-              <a class="main-navigation-link" href="catalog.html">Каталог</a>
+
+            <li class="main__navigation__item">
+              <a class="main__navigation__link" href="catalog.html">Каталог</a>
             </li>
-            <li class="main-navigation-list-item">
-              <a class="main-navigation-link" href="blank.html">Новости</a>
+
+            <li class="main__navigation__item">
+              <a class="main__navigation__link" href="#">Новости</a>
             </li>
-            <li class="main-navigation-list-item">
-              <a class="main-navigation-link" href="blank.html">Спецпредложения</a>
+
+            <li class="main__navigation__item">
+              <a class="main__navigation__link" href="#">Спецпредложения</a>
             </li>
-            <li class="main-navigation-list-item">
-              <a class="main-navigation-link" href="blank.html">Доставка</a>
+
+            <li class="main__navigation__item">
+              <a class="main__navigation__link" href="index.html#delivery">Доставка</a>
             </li>
-            <li class="main-navigation-list-item">
-              <a class="main-navigation-link" href="blank.html">Контакты</a>
+
+            <li class="main__navigation__item">
+              <a class="main__navigation__link" href="#contacts">Контакты</a>
             </li>
+
           </ul>
+
         </nav>
 
       </div>
 
     </header>
 
-    <main class="main-blank">
-      <h2 class="main-blank-title">Тут должно быть что-то,но, видимо, этого пока нет.</h2>
+    <main class="main__blank">
+
+      <h2 class="main__blank__title">Тут должно быть что-то,но, видимо, этого пока нет.</h2>
+
     </main>
 
-    <footer class="main-footer">
+    <footer class="footer">
 
-      <div class="footer-top">
+      <div class="footer__top">
 
-        <div class="footer-top-block">
-          <a class="main-footer-logo">
+        <div class="footer__top__block">
+
+          <a class="footer__logo">
             <img src="img/logo.svg" width="220" height="68" alt="Логотип ТЕХНОМАРТ">
           </a>
-          <p class="footer-contacts">
+
+          <p class="footer__contacts">
             г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br>
-            <a class="footer-contacts-phone" href="tel:+78125550555">+7(812)555-05-55</a>
+            <a class="footer__contacts__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
+
         </div>
 
-        <nav class="footer-navigation">
-          <ul class="footer-navigation-list">
-            <li class="footer-navigation-list-item">
-              <a class="footer-navigation-link" href="index.html">Компания</a>
+        <nav class="footer__navigation">
+
+          <ul class="footer__navigation__list">
+
+            <li class="footer__navigation__item">
+              <a class="footer__navigation__link" href="index.html#about">Компания</a>
             </li>
-            <li class="footer-navigation-list-item">
-              <a class="footer-navigation-link" href="blank.html">Новости</a>
+
+            <li class="footer__navigation__item">
+              <a class="footer__navigation__link" href="#">Новости</a>
             </li>
-            <li class="footer-navigation-list-item">
-              <a class="footer-navigation-link" href="catalog.html">Каталог</a>
+
+            <li class="footer__navigation__item">
+              <a class="footer__navigation__link" href="catalog.html">Каталог</a>
             </li>
-            <li class="footer-navigation-list-item">
-              <a class="footer-navigation-link" href="blank.html">Доставка</a>
+
+            <li class="footer__navigation__item">
+              <a class="footer__navigation__link" href="#">Доставка</a>
             </li>
-            <li class="footer-navigation-list-item">
-              <a class="footer-navigation-link" href="blank.html">Контакты</a>
+
+            <li class="footer__navigation__item">
+              <a class="footer__navigation__link" href="#contacts">Контакты</a>
             </li>
-            <li class="footer-navigation-list-item2">
-              <a class="footer-navigation-link" href="catalog.html">Материалы</a>
+
+            <li class="footer__navigation__item-bottom">
+              <a class="footer__navigation__link" href="index.html#features">Материалы</a>
             </li>
-            <li class="footer-navigation-list-item2">
-              <a class="footer-navigation-link" href="catalog.html">Техника</a>
+
+            <li class="footer__navigation__item-bottom">
+              <a class="footer__navigation__link" href="index.html#features">Техника</a>
             </li>
-            <li class="footer-navigation-list-item2">
-              <a class="footer-navigation-link" href="catalog.html">Инструмент</a>
+
+            <li class="footer__navigation__item-bottom">
+              <a class="footer__navigation__link" href="index.html#features">Инструмент</a>
             </li>
-            <li class="footer-navigation-list-item2">
-              <a class="footer-navigation-link" href="blank.html">Спецпредложения</a>
+
+            <li class="footer__navigation__item-bottom">
+              <a class="footer__navigation__link" href="index.html#features">Спецпредложения</a>
             </li>
+
           </ul>
+
         </nav>
 
       </div>
 
-      <div class="footer-wrapper">
+      <div class="footer__wrapper">
 
-        <div class="flex-conteiner">
+        <div class="flex__conteiner">
 
-          <div class="footer-bottom">
+          <div id="contacts" class="footer__bottom">
 
-            <h2 class="technomart">
+            <h2 class="footer__copyright">
               © 2010-2019 Компания "Техномарт"<br>
                Все права защищены
             </h2>
 
-            <section class="footer-social">
-              <h2 class="footer-social-title">Мы в соцсетях</h2>
-              <ul class="footer-social-list">
-                <li class="footer-social-list-item">
-                  <a class="social-button" href="https://vk.com">
+            <section class="footer__social">
+
+              <h2 class="visually-hidden">Мы в соцсетях</h2>
+
+              <ul class="footer__social__list">
+
+                <li class="footer__social__item">
+                  <a class="social__button" href="https://vk.com">
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="vkontakte" fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683
+                      <path class="social__vkontakte" fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683
                         33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873
                         10.6721 1.4839 22.1627 1.4839Z" fill="#212A3A"/>
                       <path d="M24.5403 25.7281C25.4609 25.4384 26.6395 27.6406 27.8943 28.4834C28.836 29.1219 29.5573 28.9841 29.5573
@@ -212,20 +236,22 @@
                     </svg>
                   </a>
                 </li>
-                <li class="footer-social-list-item">
-                  <a class="social-button" href="https://ru-ru.facebook.com">
+
+                <li class="footer__social__item">
+                  <a class="social__button" href="https://ru-ru.facebook.com">
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="facebook" fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1232 1.4839 42.2265 10.5873
+                      <path class="social__facebook" fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1232 1.4839 42.2265 10.5873
                         42.2265 21.8169C42.2265 33.0461 33.1232 42.1494 21.8938 42.1494C10.6643 42.1494 1.56108 33.0461 1.56108
                         21.8169C1.56108 10.5873 10.6643 1.4839 21.8938 1.4839Z" fill="#212A3A"/>
                       <path d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z" fill="white"/>
                     </svg>
                   </a>
                 </li>
-                <li class="footer-social-list-item">
-                  <a class="social-button" href="https://www.instagram.com">
+
+                <li class="footer__social__item">
+                  <a class="social__button" href="https://www.instagram.com">
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="instagram" fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873
+                      <path class="social__instagram" fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873
                         42.2265 21.8169C42.2265 33.0461 33.1233 42.1494 21.8938 42.1494C10.6643 42.1494 1.56112 33.0461
                         1.56112 21.8169C1.56112 10.5873 10.6643 1.4839 21.8938 1.4839Z" fill="#212A3A"/>
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65
@@ -236,17 +262,23 @@
                     </svg>
                   </a>
                 </li>
+
               </ul>
+              
             </section>
 
-            <ul class="footer-feedback-list">
-              <li class="footer-feedback">Обратная связь:<br>
-                <a class="footer-feedback-link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <ul class="footer__feedback__list">
+
+              <li class="footer__feedback__item">Обратная связь:<br>
+                <a class="footer__feedback__link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </li>
-              <li class="footer-copyright">Разработано-<br>
-                <a class="footer-copyright-link" href="https://htmlacademy.ru/intencive/htmlcss">htmlacademy.ru</a>
+
+              <li class="footer__copyright__item">Разработано &mdash;<br>
+                <a class="footer__copyright__link" href="https://htmlacademy.ru/intencive/htmlcss">htmlacademy.ru</a>
               </li>
+
             </ul>
+
           </div>
 
         </div>
